@@ -2,11 +2,11 @@ public class App {
 
     public static void main(String[] args) {
 
-        Book firstBook = new Book("Алые паруса", "Александр Грин", 1923);
-        Book secondBook = new Book("Момент истины", "Владимир Богомолов", 1974);
+        Author writer1 = new Author("Алексанр", "Грин");
+        Author writer2 = new Author("Владимир", "Богомолов");
 
-        Author writer1 = new Author("Анн", "Голон");
-        Author writer2 = new Author("Аньес", "Мартен-Люган");
+        Book firstBook = new Book("Алые паруса", writer1, 1923);
+        Book secondBook = new Book("Момент истины", writer2, 1974);
 
         System.out.println("firstBook.getBookName() = " + firstBook.getBookName());
         System.out.println("firstBook.getAuthor() = " + firstBook.getAuthor());
